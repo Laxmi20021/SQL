@@ -4,7 +4,7 @@ CREATE TABLE students (student_id INT PRIMARY KEY,first_name VARCHAR(50),
 
 alter table students add constraint age_chk check(age>15);
 
-alter table students drop constraint age ;
+alter table students drop constraint age_chk  ;
 
 INSERT INTO students (student_id, first_name, last_name, age, email) VALUES
 (1, 'Laxmi', 'patil', 20, 'laxmi@gmail.com'),
@@ -17,4 +17,4 @@ select * from students;
 
 alter table students add constraint age_chk check(age>15);
 
-alter table students drop constraint age ;
+alter table students drop constraint age_chk ;

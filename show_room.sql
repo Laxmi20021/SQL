@@ -31,3 +31,5 @@ insert into show_room values(20,8565,'thar','jeevitha','kavitha','Mahindra',9000
 alter table show_room modify column vehicle_no bigint; 
 alter table show_room modify column id bigint; 
 alter table show_room modify column vistors int; 
+
+ALTER TABLE show_room modify vistors int not null;

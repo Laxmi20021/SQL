@@ -31,3 +31,5 @@ alter table market_info modify column tempos bigint;
 alter table market_info modify column id bigint; 
 alter table market_info modify column customers int; 
 alter table market_info modify column orders bigint;
+
+ALTER TABLE market_info modify customers int not null;

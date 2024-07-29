@@ -17,8 +17,8 @@ insert into vrl values (4,'banashankari','konanakunte','sudeep',28,255);
 insert into vrl values (3,'jayanagar','shivanagar','pavan',30,256);
 
 alter table vrl add column b_no_of_conductor int not null;
+
 select * from vrl;
-alter table vrl drop primary key;
 
 alter table vrl drop b_no_of_conductor;
 
