@@ -1,7 +1,7 @@
 CREATE DATABASE  state_information;
 
 USE state_information;
-
+drop table state_information;
 
 CREATE TABLE state_information (
     id INT ,
@@ -97,6 +97,72 @@ SELECT * FROM state_information WHERE population > 10000000 OR area > 50000;
 
 
 select * from state_information;
+
+
+select * from state_information order by id;
+select * from state_info order by id desc;
+
+select DISTINCT FROM WHERE GROUP BY HAVING ORDER BY;
+/**execution sequence of query**/
+SELECT * FROM state_info order by no_of_district desc;
+select * from state_info order by state_name;
+select * from state_info where s_population > 1130704 order by id;
+
+/**LIKE: Pattern matching 
+wildcards:% and  _ **/
+select * from state_info where state_name like 'a%';
+select * from state_info where state_name like 's%';
+select * from state_info where state_name like 'k%';
+select * from state_info where state_name like 'm%h%a';
+select * from state_info where state_name like 'k%a%';
+select * from state_info where s_langauge like '%a';
+
+select * from state_info where state_name like '_a%';
+select * from state_info where satate_name like 'k%_';
+select * from state_info where satate_name like 'm%_';
+
+
+/**between**:used to specify the rate**/
+
+select * from state_info where id between 10 and 15;
+select * from state_info where state_name between 'a' and 'g';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

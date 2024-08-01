@@ -58,9 +58,6 @@ varchar(20) not null;
 alter table temple_info modify column flowers
 varchar(30) not null;
 
-alter table temple_info
-modify column t_name varchar(20) not null,
-add constraint unique_
 
 
 
